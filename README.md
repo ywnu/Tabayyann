@@ -8,6 +8,12 @@ The system uses Retrieval-Augmented Generation (RAG) to retrieve evidence from a
 
 https://tabayyann-production.up.railway.app
 
+## Team
+
+- [Deem Almanea](https://github.com/ywnu) — `@ywnu`
+- [Alanoud Alhamad](https://github.com/Alanoudb1) — `@Alanoudb1`
+- [Wahaj Almarwi](https://github.com/wahaj2005x-blip) — `@wahaj2005x-blip`
+
 ## Main Features
 
 - Arabic Islamic question answering
