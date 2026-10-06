@@ -1,4 +1,4 @@
-﻿# ØªØ¨ÙŠÙ‘Ù†Ù‘ | Tabayyann
+# تبيّنّ | Tabayyann
 
 **Tabayyann** is an Arabic grounded Islamic Q&A system built for reliable, source-based answers.
 
@@ -27,31 +27,39 @@ https://tabayyann-production.up.railway.app
 
 ## Architecture
 
-User Question  
-â†“  
-Query Guard  
-â†“  
-Hybrid Retriever  
-â†“  
-Grounded Evidence Preparation  
-â†“  
-Answer Policy  
-â†“  
-Claude  
-â†“  
+```text
+User Question
+    |
+    v
+Query Guard
+    |
+    v
+Hybrid Retriever
+    |
+    v
+Grounded Evidence Preparation
+    |
+    v
+Answer Policy
+    |
+    v
+Claude
+    |
+    v
 Validated Answer + Citations
+```
 
 ## Main Project Files
 
-- `main.py` â€” Railway application entry point
-- `tabayyann_backend_api_final.py` â€” FastAPI backend
-- `tabayyann_query_guard_v9.py` â€” query guard
-- `unified_02_retriever_v7.py` â€” hybrid retriever
-- `unified_04_prepare_grounded_answer (4).py` â€” grounded evidence preparation
-- `tabayyan_answer_policy_v1.json` â€” answer policy
-- `index.html` â€” Arabic user interface
-- `unified_rag/` â€” retrieval dataset and embeddings
-- `requirements.txt` â€” Python dependencies
+- `main.py` - Railway application entry point
+- `tabayyann_backend_api_final.py` - FastAPI backend
+- `tabayyann_query_guard_v9.py` - query guard
+- `unified_02_retriever_v7.py` - hybrid retriever
+- `unified_04_prepare_grounded_answer (4).py` - grounded evidence preparation
+- `tabayyan_answer_policy_v1.json` - answer policy
+- `index.html` - Arabic user interface
+- `unified_rag/` - retrieval dataset and embeddings
+- `requirements.txt` - Python dependencies
 
 ## Safety and Grounding
 
@@ -83,22 +91,51 @@ Citation markers such as `[1]` and `[2]` are removed before speech generation.
 
 Python 3.12 is recommended.
 
+Install dependencies:
+
 ```bash
 pip install -r requirements.txt
-uvicorn main:app --host 0.0.0.0 --port 8000
 ```
 
-Required environment variables:
+Set the required environment variables:
 
 ```text
 ANTHROPIC_API_KEY
 ELEVENLABS_API_KEY
 ```
 
+Run the application:
+
+```bash
+uvicorn main:app --host 0.0.0.0 --port 8000
+```
+
+Open:
+
+```text
+http://localhost:8000
+```
+
 ## Health Check
 
-`/health`
+```text
+/health
+```
+
+Example:
+
+```text
+https://tabayyann-production.up.railway.app/health
+```
 
 ## Security
 
 API keys are not stored in this repository. Configure them through environment variables locally or on the deployment platform.
+
+## Deployment
+
+The production version is deployed using Railway.
+
+## Project
+
+Built as a hackathon project focused on trustworthy Arabic Islamic question answering with retrieval, grounding, citations, and voice interaction.
