@@ -13,6 +13,8 @@ https://tabayyann-production.up.railway.app
 - [Deem Almanea](https://github.com/ywnu) — `@ywnu`
 - [Alanoud Alhamad](https://github.com/Alanoudb1) — `@Alanoudb1`
 - [Wahaj Almarwi](https://github.com/wahaj2005x-blip) — `@wahaj2005x-blip`
+- [Jumanah Alotaibi](https://github.com/Jumanah-1) — `@Jumanah-1`
+- [Hanan Almutairi](https://github.com/lixr-7) — `@lixr-7`
 
 ## Main Features
 
