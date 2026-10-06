@@ -1,0 +1,57 @@
+{
+  "version": "1.0",
+  "project": "Tabayyan",
+  "statuses": {
+    "supported": {
+      "label_ar": "موثّق بالمصادر",
+      "requirements": [
+        "وجود دليل مباشر ذي صلة",
+        "وجود مصدر واحد على الأقل",
+        "عدم وجود تعارض غير معروض"
+      ]
+    },
+    "insufficient_evidence": {
+      "label_ar": "أدلة غير كافية",
+      "requirements": [
+        "النتائج مرتبطة جزئيًا لكن لا تكفي للحكم",
+        "ممنوع استخدام معرفة النموذج لسد النقص"
+      ]
+    },
+    "conflict": {
+      "label_ar": "يوجد اختلاف",
+      "requirements": [
+        "وجود أقوال مختلفة في النتائج المسترجعة",
+        "عرض كل قول مع مصدره",
+        "عدم دمج الأقوال في صياغة واحدة"
+      ]
+    },
+    "needs_clarification": {
+      "label_ar": "يحتاج توضيحًا",
+      "requirements": [
+        "السؤال أو الادعاء ناقص أو مبهم",
+        "يطلب النظام توضيحًا بدل التخمين"
+      ]
+    },
+    "out_of_scope": {
+      "label_ar": "خارج نطاق تبيّنّ",
+      "requirements": [
+        "السؤال خارج المحتوى الشرعي المتاح",
+        "عدم التحول إلى مساعد عام"
+      ]
+    },
+    "not_found": {
+      "label_ar": "لم يتم العثور على دليل كافٍ",
+      "requirements": [
+        "لا توجد نتيجة ذات صلة كافية",
+        "لا توجد إجابة من ذاكرة النموذج"
+      ]
+    }
+  },
+  "hard_rules": [
+    "supported requires sources.length >= 1",
+    "no fabricated citations",
+    "no fabricated hadith or ayah text",
+    "no model-memory fallback when evidence is missing",
+    "citation remains required even if user asks to omit it"
+  ]
+}

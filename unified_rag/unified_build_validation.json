@@ -1,0 +1,101 @@
+{
+  "status": "PASS",
+  "active_sources": 5,
+  "total_units": 15544,
+  "embedding_shape": [
+    15544,
+    768
+  ],
+  "embedding_dtype": "float32",
+  "normalized_sample": true,
+  "max_norm_error_sample": 1.1920928955078125e-07,
+  "empty_text_rows": 0,
+  "duplicate_global_unit_ids": 0,
+  "source_details": [
+    {
+      "source": "quran",
+      "source_name": "Qur'an",
+      "rows": 6236,
+      "embedding_shape": [
+        6236,
+        768
+      ],
+      "embedding_dtype": "float32",
+      "normalized_sample": true,
+      "max_norm_error_sample": 1.1920928955078125e-07,
+      "metadata_mode": "row_aligned",
+      "empty_text_rows": 0,
+      "duplicate_global_unit_ids": 0,
+      "retrieval_file": "quran\\rag_final\\quran_ayah_chunks.jsonl",
+      "embedding_file": "quran\\rag_final\\quran_ayah_embeddings.npy"
+    },
+    {
+      "source": "bukhari",
+      "source_name": "Sahih al-Bukhari",
+      "rows": 980,
+      "embedding_shape": [
+        980,
+        768
+      ],
+      "embedding_dtype": "float32",
+      "normalized_sample": true,
+      "max_norm_error_sample": 1.1920928955078125e-07,
+      "metadata_mode": "row_aligned",
+      "empty_text_rows": 0,
+      "duplicate_global_unit_ids": 0,
+      "retrieval_file": "bukhari\\rag_final\\bukhari_women_chunks.jsonl",
+      "embedding_file": "bukhari\\rag_final\\bukhari_women_embeddings.npy"
+    },
+    {
+      "source": "ibn_baz",
+      "source_name": "Ibn Baz",
+      "rows": 2137,
+      "embedding_shape": [
+        2137,
+        768
+      ],
+      "embedding_dtype": "float32",
+      "normalized_sample": true,
+      "max_norm_error_sample": 1.1920928955078125e-07,
+      "metadata_mode": "row_aligned",
+      "empty_text_rows": 0,
+      "duplicate_global_unit_ids": 0,
+      "retrieval_file": "binbaz\\rag_final\\binbaz_chunks.jsonl",
+      "embedding_file": "binbaz\\rag_final\\binbaz_embeddings.npy"
+    },
+    {
+      "source": "ibn_uthaymeen",
+      "source_name": "Ibn Uthaymeen",
+      "rows": 5007,
+      "embedding_shape": [
+        5007,
+        768
+      ],
+      "embedding_dtype": "float32",
+      "normalized_sample": true,
+      "max_norm_error_sample": 1.1920928955078125e-07,
+      "metadata_mode": "row_aligned",
+      "empty_text_rows": 0,
+      "duplicate_global_unit_ids": 0,
+      "retrieval_file": "ibn_uthaymeen\\raw\\uthaymeen_chunks_final.json",
+      "embedding_file": "ibn_uthaymeen\\raw\\uthaymeen_embeddings.npy"
+    },
+    {
+      "source": "ibn_kathir",
+      "source_name": "Tafsir Ibn Kathir",
+      "rows": 1184,
+      "embedding_shape": [
+        1184,
+        768
+      ],
+      "embedding_dtype": "float32",
+      "normalized_sample": true,
+      "max_norm_error_sample": 1.1920928955078125e-07,
+      "metadata_mode": "row_aligned",
+      "empty_text_rows": 0,
+      "duplicate_global_unit_ids": 0,
+      "retrieval_file": "tafsir_ibn_kathir\\rag_final\\ibn_kathir_women_chunks.jsonl",
+      "embedding_file": "tafsir_ibn_kathir\\rag_final\\ibn_kathir_women_embeddings_v2.npy"
+    }
+  ]
+}
